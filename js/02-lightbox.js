@@ -22,12 +22,12 @@ galleryList.addEventListener("click", handleGalleryClick);
 
 function handleGalleryClick(event) {
   event.preventDefault();
-  if (event.target.classList.contains("gallery__image")) {
+
   const lightbox = new SimpleLightbox('.gallery a', {
     captionsData: 'alt',
     captionPosition: 'bottom',
     captionDelay: 250
     });
   }
-}
+
 console.log(galleryItems);
