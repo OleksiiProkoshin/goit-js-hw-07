@@ -18,16 +18,11 @@ const galleryMarkup = galleryItems
 
 galleryList.innerHTML = galleryMarkup;
 
-galleryList.addEventListener("click", handleGalleryClick);
-
-function handleGalleryClick(event) {
-  event.preventDefault();
-
   const lightbox = new SimpleLightbox('.gallery a', {
     captionsData: 'alt',
     captionPosition: 'bottom',
     captionDelay: 250
     });
-  }
+  
 
 console.log(galleryItems);
